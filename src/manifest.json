@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Jenkins build notifier",
+  "description": "This extension notifies you about the Jenkins builds you are watching.",
+  "version": "0.1",
+
+  "browser_action" : {
+    "default_icon" : "images/ninjenkins-19x19.png",
+    "default_title" : "Jenkins build notifier",
+    "default_popup" : "html/popup.html"
+  },
+  "options_ui" : {
+    "chrome_style" : true,
+    "page" : "html/options.html"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "https://ajax.googleapis.com/"
+	]
+}
